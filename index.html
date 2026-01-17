@@ -28,7 +28,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#blog">Insights</a></li>
+                <li><a href="#blog">Learnings</a></li>
                 <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -77,7 +77,12 @@
             </div>
         </div>
 
-
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -110,7 +115,7 @@
         </div>
     </section>
 
-    <!-- Experience Section (Glass Cards) -->
+    <!-- Experience Section (Trust Format) -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Experience</h2>
@@ -126,19 +131,18 @@
                             <span class="job-duration">Jan 2024 – Present | Remote, USA</span>
                         </div>
                     </div>
-                    <p class="job-summary">
-                        Working on the AI-Driven Patient Insights Platform. Applying secure, HIPAA-compliant workflows
-                        to drive retail analytics.
-                    </p>
-                    <div class="job-achievements">
-                        <div class="achievement"><i class="fas fa-bolt"></i> <span>Built low-latency Flink & Spark
-                                pipelines for inventory anomaly detection.</span></div>
-                        <div class="achievement"><i class="fas fa-cogs"></i> <span>Automated ETL with Airflow, Prefect,
-                                & Polars for patient segmentation.</span></div>
-                        <div class="achievement"><i class="fas fa-chart-line"></i> <span> Delivered sub-second
-                                dashboards using Redshift, Athena, & Druid.</span></div>
-                        <div class="achievement"><i class="fas fa-robot"></i> <span>Prepared NLP datasets (Spark +
-                                Hugging Face) for patient behavior models.</span></div>
+                    <div class="job-bullets">
+                        <ul class="trust-bullets">
+                            <li>Built low-latency <strong>Kafka–Flink</strong> pipelines to detect operational
+                                anomalies, cutting data latency by <strong>95%</strong> and enabling proactive alerts
+                                for downstream systems.</li>
+                            <li>Orchestrated patient segmentation pipelines using <strong>Airflow</strong> and
+                                <strong>Python</strong>, delivering <strong>99.9%</strong> reliability and fully
+                                eliminating manual intervention.
+                            </li>
+                            <li>Scaled NLP data preprocessing with distributed <strong>Spark</strong> jobs, reducing
+                                model training time by <strong>40%</strong> and improving experimentation velocity.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -152,31 +156,33 @@
                             <span class="job-duration">Jan 2020 – Aug 2022 | Bengaluru, India</span>
                         </div>
                     </div>
-                    <p class="job-summary">
-                        Key contributor to the Marketplace Data Modernization Project. Optimized high-volume ETL
-                        pipelines and cloud data architecture.
-                    </p>
-                    <div class="job-achievements">
-                        <div class="achievement"><i class="fas fa-tachometer-alt"></i> <span>Increased pipeline
-                                throughput by 48% using Python, Spark, & Snowflake.</span></div>
-                        <div class="achievement"><i class="fas fa-cloud"></i> <span>Integrated Azure Data Lake with
-                                Snowflake/Hadoop, cutting storage costs by 17%.</span></div>
-                        <div class="achievement"><i class="fas fa-check-double"></i> <span>Reduced data discrepancies by
-                                99.2% via automated Quality Checks.</span></div>
-                        <div class="achievement"><i class="fas fa-database"></i> <span>Improved query efficiency by 31%
-                                through advanced Snowflake modeling.</span></div>
+                    <div class="job-bullets">
+                        <ul class="trust-bullets">
+                            <li>Led the design and optimization of <strong>Snowflake</strong> and <strong>Spark</strong>
+                                ETL pipelines for a large-scale marketplace modernization effort, improving throughput
+                                by <strong>48%</strong>.</li>
+                            <li>Drove cloud cost optimization by implementing tiered storage lifecycles across
+                                <strong>Azure Data Lake</strong> and <strong>Snowflake</strong>, achieving
+                                <strong>17%</strong> cost savings with <strong>99.98%</strong> reliability.
+                            </li>
+                            <li>Built automated <strong>SQL</strong> and <strong>PySpark</strong> data quality
+                                frameworks, cutting data discrepancies by <strong>99.2%</strong>.</li>
+                            <li>Accelerated analytical queries by <strong>31%</strong> through optimized data models
+                                using partitioning and clustering techniques.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Enhanced Detail) -->
     <section id="projects" class="section alt-bg">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
 
+                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Real-Time ML Feature Store</h3>
@@ -185,18 +191,26 @@
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <p class="project-desc">Real-time feature store and model serving API. Features are computed from
-                        streaming events and served to ML models with low latency.</p>
                     <div class="tech-stack">
                         <span>Kafka</span><span>Python</span><span>Redis</span>
                     </div>
-                    <ul class="project-bullets">
-                        <li>Event-driven architecture.</li>
-                        <li>Low-latency feature serving.</li>
-                        <li><strong>For:</strong> MLOps & Real-time Systems.</li>
-                    </ul>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <strong>Problem:</strong> <span class="text-muted-light">Real-time features were unavailable
+                                for low-latency ML inference.</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Architecture:</strong> <span class="text-accent">Kafka &rarr; Flink &rarr; Redis
+                                &rarr; API</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Outcome:</strong> <span class="text-muted-light">Sub-second feature access and
+                                scalable ingestion pipeline.</span>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Streaming Event Pipeline</h3>
@@ -204,18 +218,26 @@
                             <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <p class="project-desc">High-throughput streaming pipeline ingesting user events, processing them
-                        with Spark/Flink, and pushing metrics to a live dashboard.</p>
                     <div class="tech-stack">
                         <span>Spark</span><span>Flink</span><span>Grafana</span>
                     </div>
-                    <ul class="project-bullets">
-                        <li>High-velocity clickstream data.</li>
-                        <li>Real-time operational metrics.</li>
-                        <li><strong>For:</strong> Big Data velocity.</li>
-                    </ul>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <strong>Problem:</strong> <span class="text-muted-light">High-velocity user clickstream data
+                                was unmonitored.</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Architecture:</strong> <span class="text-accent">Event Bus &rarr; Spark Streaming
+                                &rarr; TimeSeries DB &rarr; Grafana</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Outcome:</strong> <span class="text-muted-light">Live operational dashboards with <
+                                    5s latency.</span>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Enterprise Data Warehouse</h3>
@@ -223,18 +245,26 @@
                             <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <p class="project-desc">End-to-end batch ELT pipeline combining API and transactional data into a
-                        dimensional model for business analytics.</p>
                     <div class="tech-stack">
                         <span>Snowflake</span><span>dbt</span><span>Airflow</span>
                     </div>
-                    <ul class="project-bullets">
-                        <li>Star Schema with SCD.</li>
-                        <li>Complex Airflow DAGs.</li>
-                        <li><strong>For:</strong> Data Warehousing.</li>
-                    </ul>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <strong>Problem:</strong> <span class="text-muted-light">Siloed data sources made
+                                cross-business reporting impossible.</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Architecture:</strong> <span class="text-accent">Postgres/API &rarr; Airflow
+                                (Extract) &rarr; Snowflake &rarr; dbt (Model)</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Outcome:</strong> <span class="text-muted-light">Unified Star Schema enabling
+                                self-serve BI for 3 departments.</span>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Customer Analytics Platform</h3>
@@ -242,16 +272,23 @@
                             <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <p class="project-desc">Comprehensive analytics platform combining diverse data sources for
-                        360-degree customer views and revenue tracking.</p>
                     <div class="tech-stack">
                         <span>BigQuery</span><span>Streamlit</span><span>SQL</span>
                     </div>
-                    <ul class="project-bullets">
-                        <li>Integrated REST APIs & DBs.</li>
-                        <li>Interactive data apps.</li>
-                        <li><strong>For:</strong> Full-stack Analytics.</li>
-                    </ul>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <strong>Problem:</strong> <span class="text-muted-light">Stakeholders lacked visibility into
+                                churn and revenue drivers.</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Architecture:</strong> <span class="text-accent">Polyglot Sources &rarr; BigQuery
+                                &rarr; Python/Streamlit App</span>
+                        </div>
+                        <div class="detail-row">
+                            <strong>Outcome:</strong> <span class="text-muted-light">Interactive data app used by sales
+                                team to reduce churn by 10%.</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -339,42 +376,47 @@
         </div>
     </section>
 
-    <!-- Blog Section (Tech Insights Grid) -->
+    <!-- Technical Notes Section (Renamed from Insights) -->
     <section id="blog" class="section">
         <div class="container">
-            <h2 class="section-title">Tech Insights & Thoughts</h2>
+            <h2 class="section-title">Technical Notes & Learnings</h2>
             <div class="insight-grid">
 
-                <div class="insight-card">
-                    <div class="insight-icon"><i class="fas fa-brain"></i></div>
+                <div class="insight-card note-card">
+                    <div class="insight-icon"><i class="fas fa-bolt"></i></div>
                     <div class="insight-content">
-                        <h3>RAG Pipelines for Enterprise</h3>
-                        <p class="insight-excerpt">"Retrieval-Augmented Generation isn't just a buzzword; it's the
-                            missing link between frozen LLMs and dynamic enterprise data. Security and vector latency
-                            are the new bottlenecks."</p>
-                        <a href="#" class="read-more-link">Read Thoughts <i class="fas fa-arrow-right"></i></a>
+                        <h3>Real-Time Systems</h3>
+                        <ul class="note-list">
+                            <li>Spark Streaming vs Flink: Spark works well for micro-batching, but Flink is
+                                non-negotiable for true low-latency, stateful processing.</li>
+                            <li>Handling Kafka consumer backpressure during traffic spikes without lag or message loss.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="insight-card">
-                    <div class="insight-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="insight-card note-card">
+                    <div class="insight-icon"><i class="fas fa-server"></i></div>
                     <div class="insight-content">
-                        <h3>Real-Time Fraud Defense</h3>
-                        <p class="insight-excerpt">"Batch processing is too slow for modern fraud. The future is
-                            sub-second graph analysis using Flink and GNNs to stop bad actors before the transaction
-                            clears."</p>
-                        <a href="#" class="read-more-link">Read Thoughts <i class="fas fa-arrow-right"></i></a>
+                        <h3>Production Engineering</h3>
+                        <ul class="note-list">
+                            <li>Batch vs streaming trade-offs: Don’t stream unless latency is a hard requirement—the
+                                complexity cost is high.</li>
+                            <li>Idempotency is key in distributed pipelines to handle retries without data duplication.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="insight-card">
-                    <div class="insight-icon"><i class="fas fa-leaf"></i></div>
+                <div class="insight-card note-card">
+                    <div class="insight-icon"><i class="fas fa-check-double"></i></div>
                     <div class="insight-content">
-                        <h3>Green Data Engineering</h3>
-                        <p class="insight-excerpt">"Cloud costs are carbon costs. Optimizing Spark partitions and S3
-                            lifecycle policies isn't just about saving money anymore—it's an engineering
-                            responsibility."</p>
-                        <a href="#" class="read-more-link">Read Thoughts <i class="fas fa-arrow-right"></i></a>
+                        <h3>Data Quality</h3>
+                        <ul class="note-list">
+                            <li>Implementing circuit breakers in Airflow to stop bad data from polluting downstream
+                                tables.</li>
+                            <li>Shift-left testing: Catching schema changes before they break the warehouse.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -401,9 +443,9 @@
                         </div>
                     </div>
                     <div class="social-row">
-                        <a href="https://www.linkedin.com/in/mani-koliparthi-613106213"><i
-                                class="fab fa-linkedin"></i></a>
+                        <a href="www.linkedin.com/in/mani-vaibhav-k-286ba3354"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/ManiRukki"><i class="fab fa-github"></i></a>
+                        <a href="resume.pdf" download><i class="fas fa-file-pdf"></i></a>
                     </div>
                 </div>
 
@@ -432,15 +474,19 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mani Vaibhav Ruhanth Koliparthi. Built with <i class="fas fa-code"></i> and <i
-                    class="fas fa-coffee"></i>.</p>
+            <div class="footer-content">
+                <p class="footer-tagline">Building scalable data systems for analytics and AI.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/mani-koliparthi-613106213"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ManiRukki"><i class="fab fa-github"></i></a>
+                    <a href="resume.pdf" download><i class="fas fa-file-download"></i> Resume</a>
+                </div>
+                <p class="copyright">&copy; 2026 Mani Vaibhav Ruhanth Koliparthi.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // No inline script needed now, everything moved to script.js for cleaner code
-    </script>
 </body>
 
 </html>
